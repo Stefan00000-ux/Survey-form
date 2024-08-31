@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Conservation Survey</title>
+    
+</head>
+<body>
+
+    <form action="/submit-survey" method="post">
+        <h2>Water body Survey Form</h2>
+
+        <!-- General Awareness and Attitude -->
+         <fieldset>
+        <label for="importance">1. How important do you believe it is to protect and preserve rivers?</label>
+        <select id="importance" name="importance">
+            <option value="Very Important">Very Important</option>
+            <option value="Important">Important</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Not Important">Not Important</option>
+            <option value="Not Important at All">Not Important at All</option>
+        </select>
+    </fieldset>
+<fieldset>
+        <label for="waterbody">2. Type of water body?</label>
+        <select id="waterbody" name="waterbody">
+            <option value="River">River</option>
+            <option value="Lake">Lake</option>
+            <option value="Pond">Pond</option>
+            <option value="Canal">Canal</option>
+            <option value="Reservoir">Reservoir</option>
+        </select>
+    </fieldset>
+
+        <!-- Personal Contribution and Behavior -->
+        <label for="participation">3. Have you ever participated in any activities or initiatives aimed at protecting rivers?</label>
+        <select id="participation" name="participation">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="activities">4. If yes, please specify the type of activities you participated in:</label>
+        <textarea id="activities" name="activities" rows="4" placeholder="Describe the activities..."></textarea>
+
+        <label for="frequency">5. How often do you engage in activities that help protect rivers?</label>
+        <select id="frequency" name="frequency">
+            <option value="Regularly">Regularly</option>
+            <option value="Occasionally">Occasionally</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Never">Never</option>
+        </select>
+
+        <label for="actions">6. What actions do you currently take to reduce your environmental impact on rivers?</label>
+        <select id="actions" name="actions[]" multiple>
+            <option value="Reducing plastic usage">Reducing plastic usage</option>
+            <option value="Proper disposal of waste">Proper disposal of waste</option>
+            <option value="Using eco-friendly products">Using eco-friendly products</option>
+            <option value="Participating in river clean-ups">Participating in river clean-ups</option>
+            <option value="Supporting river conservation organizations">Supporting river conservation organizations</option>
+            <option value="Other">Other (please specify)</option>
+        </select>
+        <input type="text" name="other_action_details" placeholder="Describe other actions...">
+
+        <!-- Barriers to Action -->
+        <label for="barriers">7. What barriers, if any, prevent you from participating in river conservation activities?</label>
+        <textarea id="barriers" name="barriers" rows="4" placeholder="Describe any barriers..."></textarea>
+
+        <!-- Final Thoughts -->
+        <label for="effective_way">8. In your opinion, what is the most effective way to protect rivers?</label>
+        <textarea id="effective_way" name="effective_way" rows="4" placeholder="Share your opinion..."></textarea>
+
+        <label for="additional_ideas">9. Please share any additional ideas or suggestions on how we can better protect our rivers:</label>
+        <textarea id="additional_ideas" name="additional_ideas" rows="4" placeholder="Share your ideas..."></textarea>
+
+        <label for="newsletter">10. Would you like to receive updates or newsletters about ongoing river conservation efforts?</label>
+        <select id="newsletter" name="newsletter">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+</body>
+</html>
